@@ -158,7 +158,9 @@ Rscript readings-02.R inflammation-01.csv
 
 #### Challenges
 
-  + Write a command-line program that does addition and subtraction:
+  + Write a command-line program that does addition and subtraction.
+  **Hint:** Everything argument read from the command-line is interpreted as a character [string](../../gloss.html#string).
+  You can convert from a string to a number using the function `as.numeric`.
 
 ```{r, engine='bash'}
 Rscript arith.R 1 + 2
@@ -293,9 +295,11 @@ We will not cover this package in this lesson but when you start writing program
     Is the code easier to read?
     Is the program easier to understand?
 
-  + Separately, modify the program so that if no parameters are given (i.e., no action is specified and no filenames are given), it prints a message explaining how it should be used.
+  + Separately, modify the program so that if no action is specified (or an incorrect action is given), it prints a message explaining how it should be used.
 
-  + Separately, modify the program so that if no action is given it displays the means of the data.
+```{r usage-answer, include=FALSE, engine='bash'}
+cat readings-usage.R
+```
 
 ### Handling Standard Input
 
@@ -352,6 +356,10 @@ And now we're done: the program now does everything we set out to do.
   + Write a program called `line-count.R` that works like the Unix `wc` command:
     *   If no filenames are given, it reports the number of lines in standard input.
     *   If one or more filenames are given, it reports the number of lines in each, followed by the total number of lines.
+
+```{r line-count-answer, include=FALSE, engine='bash'}
+cat line-count.R
+```
 
 <div class="keypoints" markdown="1">
 #### Key Points

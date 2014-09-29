@@ -289,7 +289,9 @@ main()
 
 #### Challenges
 
-  + Write a command-line program that does addition and subtraction:
+  + Write a command-line program that does addition and subtraction.
+  **Hint:** Everything argument read from the command-line is interpreted as a character [string](../../gloss.html#string).
+  You can convert from a string to a number using the function `as.numeric`.
 
 
 <pre class='in'><code>Rscript arith.R 1 + 2</code></pre>
@@ -324,17 +326,29 @@ main()
 
 
 <div class='out'><pre class='out'><code>inflammation-01.csv
+inflammation-01.pdf
 inflammation-02.csv
+inflammation-02.pdf
 inflammation-03.csv
+inflammation-03.pdf
 inflammation-04.csv
+inflammation-04.pdf
 inflammation-05.csv
+inflammation-05.pdf
 inflammation-06.csv
+inflammation-06.pdf
 inflammation-07.csv
+inflammation-07.pdf
 inflammation-08.csv
+inflammation-08.pdf
 inflammation-09.csv
+inflammation-09.pdf
 inflammation-10.csv
+inflammation-10.pdf
 inflammation-11.csv
+inflammation-11.pdf
 inflammation-12.csv
+inflammation-12.pdf
 </code></pre></div>
 
 
@@ -519,9 +533,9 @@ We will not cover this package in this lesson but when you start writing program
     Is the code easier to read?
     Is the program easier to understand?
 
-  + Separately, modify the program so that if no parameters are given (i.e., no action is specified and no filenames are given), it prints a message explaining how it should be used.
+  + Separately, modify the program so that if no action is specified (or an incorrect action is given), it prints a message explaining how it should be used.
 
-  + Separately, modify the program so that if no action is given it displays the means of the data.
+
 
 ### Handling Standard Input
 
@@ -529,14 +543,10 @@ The next thing our program has to do is read data from standard input if no file
 Let's experiment in another script, which we'll save as `count-stdin.R`:
 
 
-<div class='out'><pre class='out'><code>count <- 0
-lines <- readLines(con = file("stdin"))
-for (line in lines) {
-  count <- count + 1
-}
-
+<div class='out'><pre class='out'><code>lines <- readLines(con = file("stdin"))
+count <- length(lines)
 cat("lines in standard input: ")
-cat(count)
+cat(count, sep = "\n")
 </code></pre></div>
 
 This little program reads lines from the program's standard input using `file("stdin")`.
@@ -631,6 +641,8 @@ And now we're done: the program now does everything we set out to do.
   + Write a program called `line-count.R` that works like the Unix `wc` command:
     *   If no filenames are given, it reports the number of lines in standard input.
     *   If one or more filenames are given, it reports the number of lines in each, followed by the total number of lines.
+
+
 
 <div class="keypoints" markdown="1">
 #### Key Points
