@@ -167,10 +167,11 @@
 {% if page.lessons contains 'Git' %}
     <h4>Git</h4>
     <p>
-      Install Git for Mac by downloading and running
-      <a href="http://git-scm.com/downloads">the installer</a>.  For older
-      versions of OS X (10.5-10.7) use the most recent available
-      installer <a href="https://code.google.com/p/git-osx-installer/downloads/list">available
+
+      <strong>For OS X 10.8 and higher</strong>, install Git for Mac by downloading and running
+	  <a href="http://git-scm.com/downloads">the installer</a>.
+      <strong>For older versions of OS X (10.5-10.7)</strong> use the most recent available
+      installer for your OS <a href="https://code.google.com/p/git-osx-installer/downloads/list">available
       here</a>. Use the Leopard installer for 10.5 and the Snow Leopard
       installer for 10.6-10.7.
     </p>
@@ -244,7 +245,7 @@
       You can download the binary files for your distribution
       from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
       you can use your package manager, e.g. for Debian/Ubuntu
-      run <code>apt-get install r-base</code> or <code>yum install R</code>. 
+      run <code>apt-get install r-base</code> or <code>yum install R</code>.
       Also, please install the
       <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
     </p>
@@ -298,7 +299,7 @@
   </div>
 </div>
 
-<h3>Miscellaneous</h3>
+<h3>All operating systems</h3>
 
 <div class="row-fluid">
   <div class="span6">
@@ -327,9 +328,16 @@
 	Restart Firefox when prompted.
       </li>
       <li>
-	Select "SQLite Manager" from the "Tools" menu.
+	To check that the plugin installed correctly, select "SQLite Manager" from the "Tools" menu.
       </li>
     </ul>
+    <p>
+      In newer versions of Firefox, the menu bar isn't always displayed. To make
+      it appear, use the <code>Alt</code> key next to the space bar on your
+      keyboard, or consult
+      the <a href="https://support.mozilla.org/en-US/kb/what-happened-to-the-file-edit-and-view-menus">support
+      page</a> from Firefox for additional help.
+    </p>
 {% endif %}
   </div>
   <div class="span6">
@@ -349,7 +357,7 @@
 	Download our <a href="{{site.vm_url}}">VM image</a>.
 	<strong>Warning:</strong>
 	this file is 1.7 GByte,
-	so please download it <em>before</em> coming to your bootcamp.
+	so please download it <em>before</em> coming to your workshop.
       </li>
       <li>
 	Load the VM into VirtualBox by selecting "Import Appliance"
