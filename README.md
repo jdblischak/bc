@@ -1,6 +1,17 @@
 Software Carpentry Workshops
 ============================
 
+> **Note**
+>
+> We are currently reorganizing our repositories.
+> We hope to complete work by the end of November 2014,
+> but in the interim:
+>
+> 1. Please check with us before creating pull requests against this repository ---
+>    we may point you at a new one.
+> 2. If you *do* create pull requests against this repository,
+>    please use the `gh-pages` branch rather than the `master` branch.
+
 The `bc` repository is the starting point for creating your own workshop website:
 it contains a template for your workshop's home page,
 and also hosts the shared lesson materials we have developed.
@@ -484,7 +495,7 @@ FAQ
 *   *Where can I get help?*
     <br/>
     Mail us at [admin@software-carpentry.org](mailto:admin@software-carpentry.org),
-    or join our [discussion list](http://software-carpentry.org/contrib/discuss.html)
+    or join our [discussion list](http://lists.software-carpentry.org/mailman/listinfo/discuss_lists.software-carpentry.org)
     and ask for help there.
 
 *   *Why does the workshop repository have to be created from scratch? Why not fork `bc` on GitHub?*
